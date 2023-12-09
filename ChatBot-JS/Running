@@ -1,0 +1,38 @@
+const TelegramBot = require('node-telegram-bot-api'); 
+var Datastore = require("nedb")
+var db = new Datastore({ filename: "datafile", autoload: true });
+
+const token = '6597661947:AAErDQDaM_QOS1n5J_GWOchq_KXjeMrY00s';
+const bot = new TelegramBot(token, {polling: true});
+bot.on('message', function(msg){
+	if(msg.text==="Hi"){
+		bot.sendMessage(msg.chat.id,"Hello!!\n");
+		bot.sendMessage(msg.chat.id,"To know the courses available send 'courses'\n");
+	}
+	else if(msg.text==="courses") {
+		bot.sendMessage(msg.chat.id,"Courses available:\n");
+		bot.sendMessage(msg.chat.id,"AIML (send text '1')\n");
+		bot.sendMessage(msg.chat.id,"Cyber security (send text '2')\n");
+		bot.sendMessage(msg.chat.id,"Front-end development (send text '3')\n");
+		bot.sendMessage(msg.chat.id,"Back-end development (send text '4')\n");
+		bot.sendMessage(msg.chat.id,"Data-science (send text '5')\n");
+		bot.sendMessage(msg.chat.id,"Cloud-Computing (send text'6')\n");
+		bot.sendMessage(msg.chat.id,"Java (send text '7')\n");
+		bot.sendMessage(msg.chat.id,"Bootstrap (send text '8')\n");
+	}
+	else{
+		db.find({name: msg.text}, function (err,doc){
+		for(var i=0; i< doc.length; i++){
+			console.log(doc[i]);
+			bot.sendMessage(msg.chat.id,doc[i].youtube);
+			bot.sendMessage(msg.chat.id,doc[i].web);
+		}
+	});
+		
+
+	
+
+	
+}
+	
+});
