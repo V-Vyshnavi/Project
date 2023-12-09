@@ -1,0 +1,47 @@
+var Datastore = require("nedb")
+var db = new Datastore({ filename: "datafile", autoload: true });
+var doc = [{
+	name: "1",
+	web: "https://www.udemy.com/topic/machine-learning/",
+	youtube: "https://youtu.be/JMUxmLyrhSk"
+},
+{
+   name: "2",
+   web: "https://www.udemy.com/topic/cyber-security/",
+   youtube: "https://youtu.be/PlHnamdwGmw"
+},
+{
+	name: "3",
+	web: "https://www.udemy.com/course/front-end-web-development/",
+	youtube: "https://youtu.be/Q8NPQ2RgWyg",
+},
+{
+	name: "4",
+	web: "https://www.coursera.org/learn/introduction-to-back-end-development",
+	youtube: "https://youtu.be/ENpte3HAza4"
+},
+{
+	name: "5",
+	web: "https://www.coursera.org/browse/data-science",
+	youtube: "https://youtu.be/xvEKQefqQ7A"
+},
+{
+	name: "6",
+	web: "https://www.coursera.org/browse/information-technology/cloud-computing",
+	youtube: "https://youtu.be/EN4fEbcFZ_E"
+},
+{
+	name: "7",
+	web: "https://www.javatpoint.com/java-tutorial",
+	youtube: "https://youtu.be/hBh_CC5y8-s"
+},
+{
+	name: "8",
+	web: "https://www.javatpoint.com/bootstrap-tutorial",
+	youtube: "https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR"
+}];
+
+
+db.insert(doc, function (err, newDoc){
+	console.log(newDoc);
+});
