@@ -1,0 +1,233 @@
+HTML CODE------>>>>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PERSONEL PORTFOLIO</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#Education">Education</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</nav>
+	<section id="Home">
+		<h1 class="heading">HI, I AM</h1>
+		<h1 class="heading">V. UMA VYSHNAVI</h1>
+		<br>
+		<p>AND THIS IS MY RESUME</p>
+	</section>
+	<section id="about">
+		<h1 class="heading">About Me</h1>
+		<div class="about">
+			<img src="C:\Users\HP\Documents\mine.jpg">
+			<div class="name">
+				<h2>I'm Viriyala Uma Vyshnavi</h2>
+				<p>I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease.
+				 I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am seeking for a beginner role to enhance and explore my technical knowledge gained at Vishnu Institute of Technology in the last three years. I hold a B.Tech degree from Vishnu Institute of Technology college and I have participated in many college and off-campus events which gave me confidence. I am a self-motivatied person and will try to exceed my superiors expectations. Being a fresher I assure you that I will give my best and work to my full potential. I would like to add that I work well both as an individual contributor and as a team member. </p>
+			</div>
+		</div>
+	</section>
+	<section id="Education">
+		<h1 class="heading">Education</h1>
+		<div class="columns">
+			<div class="box">
+				<h2>Bachelors in Electronics and Communications</h2>
+				<p>Currently pursuing my 3rd year of graduation in Vishnu Institue of Technology holding 8.77 CGPA in average.</p>
+			</div>
+			<div class="box">
+				<h2>Intermediate</h2>
+				<p>I have completed my Intermediate in Aditya jr. college with 9.75 CGPA</p>
+			</div>
+			<div class="box">
+				<h2>SSC</h2>
+				<p>I have completed my SSC in Sri Vidya Nidhi School with 9.5 CGPA</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<h1 class="heading">Contact</h1>
+		<form action="" class="form">
+			<input type="text" name="name" class="input" placeholder="Enter your name">
+			<input type="email" name="email" class="input" placeholder="Enter your email">
+			<textarea name="message" id="message" cols="70" rows="20" placeholder="Enter your message"></textarea>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</section>
+
+</body>
+</html>
+
+
+
+CSS CODE------->>>
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.navbar{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+.navbar::before{
+	content: "";
+	position: absolute;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.navbar ul{
+	display: flex;
+	list-style: none;
+}
+.navbar ul li{
+	font-size: 1.1rem;
+}
+.navbar ul li a{
+	padding: 5px 20px;
+	text-decoration: none;
+	color: white;
+}
+.navbar ul li a:hover{
+	border-bottom: 2px solid yellow;
+}
+#Home{
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+#Home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.heading{
+	color: white;
+	font-size: 4rem;
+	font-family: sans-serif;
+	text-align: center;
+	transform: scale(1,1.3);
+}
+#about{
+	display: flex;
+	flex-direction: column;
+	height: 800px;
+	background-color: white;
+}
+#about h1{
+	margin: 60px;
+	color: black;
+	padding: 0px 10px;
+}
+.about{
+	display: flex;
+}
+.about img{
+	width: 500px;
+	height: 400px;
+	padding: 0px 50px;
+}
+.name{
+	padding: 30px;
+}
+.name h2{
+	font-size: 2rem;
+}
+.name p{
+	font-size: 1.2rem;
+}
+#Education{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+#Education h1{
+	margin: 60px;
+}
+.columns{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding-left: 50px;
+}
+.box{
+	height: 200px;
+	width: 500px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	margin: 10px;
+	padding: 20px;
+}
+.box h2{
+	color: papayawhip;
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+.box p{
+	color: white;
+	font-size: 1.1rem;
+
+}
+#contact{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+#contact h1{
+	margin: 50px;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.input{
+	padding: 15px 20px;
+	margin: 15px;
+	width: 30%;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+}
+#message{
+	margin: 15px;
+	padding: 10px;
+	border-radius: 10px;
+}
+#submit{
+	padding: 15px 20px;
+	margin: 30px;
+	width: 15%;
+	border-radius: 20px;
+	background-color: white;
+	color: black;
+	border: none;
+	outline: none;
+}
+#submit:hover{
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
