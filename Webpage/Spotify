@@ -1,0 +1,89 @@
+HTML CODE:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Login-page</title>
+</head>
+<body>
+	<div class="left">
+		<h1 class="title">Sign into Account</h1>
+		<img class="logo" src="https://www.thomsonreuters.com/en-us/posts/wp-content/uploads/sites/20/2021/03/spotify-logo-png-file-spotify-badge-large-png-1280.png">
+		<div class="username">
+			<img class="email-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_v5a5XDAPyLyLyOU7lrui_OEuwAaW43Z3A&usqp=CAU">
+			<input type="email" name="Email-id" placeholder="Email">
+		</div>
+		<div class="password">
+			<img class="password-icon" src="https://p.kindpng.com/picc/s/495-4950519_unlock-alt-icons-download-for-free-in-png.png">
+			<input type="password" name="password" placeholder="Password">
+		</div>
+	</div>
+	
+
+</body>
+</html>
+
+
+CSS CODE:
+
+body{
+	background-image: url(https://img.freepik.com/premium-photo/3d-background-spotify-icon_318923-140.jpg);
+	background-repeat: no-repeat;
+	background-size: 1500px 800px;
+}
+.left{
+	position: fixed;
+	width: 360px;
+	height: 500px;
+	background-color: whitesmoke;
+	right: 70%;
+	border-radius: 30px;
+	top: 80px;
+	text-align: center;
+}
+.title{
+	color: forestgreen;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+.logo{
+	width: 170px;
+	height: 80px;
+}
+input[type="email"],
+input[type="password"]{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 20px;
+	color: green;
+	padding: 20px 10px 20px 5px;
+	border: 2px solid green;
+	width: 250px;
+	height: 10px;
+	margin: 20px;
+	border-radius: 25px;
+	font-family: sans-serif;
+	text-align: center;
+	box-sizing: border-box;
+}
+.email-icon{
+	position: absolute;
+  padding: 24px 32px;
+	height: 30px;
+	width: 30px;
+}
+.password-icon{
+	position: absolute;
+  padding: 24px 32px;
+	height: 30px;
+	width: 30px;
+}
+::placeholder{
+	color: green;
+	font-size: 18px;
+}
