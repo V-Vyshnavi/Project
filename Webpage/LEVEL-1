@@ -1,0 +1,376 @@
+HTML CODE
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myBook.com</title>
+	<link rel="stylesheet" type="text/css" href="task.css">
+</head>
+<body>
+	<section>
+	<nav>
+		<div class="logo">
+			<b>MyBook</b>
+		</div>
+		<div class="menu">
+			<a href="#Home"><b>Home</b></a>
+		</div>
+		<div class="about">
+			<a href="#About"><b>About</b></a>
+		</div>
+		<div class="cat">
+			<a href="#Category"><b>Category</b></a>
+		</div>
+		<div class="author">
+			<a href="#Author"><b>Author</b></a>
+		</div>
+		<div class="signup">
+			<button type="submit"><a href="signup" style="color: white;">Sign-up/Login</a></button>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="main_tag">
+			<h2>WELCOME TO</h2>
+			<h2 style="font-family: cursive; color: black;"><b>MyBook...!</b></h2>
+			<p><b>Create your own world with books...!!</b></p>
+		</div>
+		<div class="main_img">
+			<img src="https://media.istockphoto.com/id/1368099579/vector/man-reading-a-book-and-thinking.jpg?s=612x612&w=0&k=20&c=JvMb1RBBIi_mrysulCNZTd8LHT0aFf4zR-8eqnttBQM=">
+		</div>
+	</div>
+</section>
+<hr>
+<div class="About">
+	<div class="Ab_img">
+		<img src="https://api.time.com/wp-content/uploads/2021/11/featured-image.jpg?quality=85&w=1012&h=569&crop=1">
+	</div>
+	<div class="Ab_tag">
+		<h1><b>About Us</b></h1>
+		<p><b>We provide free books to read.
+		Write your own books using <span style="font-family: cursive;"> MyBook.<br>
+		</span>We give different genres for different people. Select any book and read it for free.
+		</b></p>
+		<a href="#learnmore" class="href" style="color:white; background: black;"><button type="submit" style="background: black;">LEARN MORE</a>
+	</div>
+</div>
+<hr>
+<div class="category">
+	<div class="cate_tag">
+		<h2><b><u>Youngster's Collection</u></b></h2>
+		<p><b>Read all type of genre books you wish. Adventure , Horror , Thriller.... experience all the genres for free.</b></p>
+	</div>
+	<div class="cate_img">
+		<img src="https://www.aliensandalibis.com/wp-content/uploads/2019/05/Fiction-Books.jpg">
+	</div>
+</div>
+<br>
+<div class="category1">
+	<div class="cate_img1">
+		<img src="https://hips.hearstapps.com/hmg-prod/images/best-childrens-books-1522782230.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*">
+	</div>
+	<div class="cate_tag1">
+		<h3><b><u>Children Collection</u></b></h3>
+		<p><b>Different story books and exciting comic books for free.</b></p>
+	</div>
+</div>
+<hr>
+<div class="authors">
+	<div class="a_tag">
+		<h4><b>AUTHORS</b></h4>
+		<p><b>Read your favourite author's books for free.</b></p>
+	</div>
+</div>
+<br>
+<div class="ott">
+	<div class="o_img">
+		<img src="https://forreadingaddicts.co.uk/wp-content/uploads/2016/11/Martin-and-Book.jpg">
+		<img src="https://i.insider.com/51e576de69bedd516d000001?width=480&format=jpeg">
+		<img src="https://blog.booktopia.com.au/wp-content/uploads/2018/02/Screen-Shot-2018-02-01-at-9.26.15-am.png">
+	</div>
+</div>
+</body>
+</html>
+
+CSS CODE
+
+body {
+	width: 1400px;
+	height: auto;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),
+					 url(https://thumbs.dreamstime.com/b/books-background-22199819.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo{
+	letter-spacing: 2px;
+	font-size: 2em;
+	font-family: cursive;
+	color: black;
+	background: whitesmoke;
+	padding: 10px 20px;
+	border-radius: 100px;
+}
+.menu a{
+	text-decoration: none;
+	padding: 20px 20px;
+	color: white;
+	font-size: 20px;
+	position: relative;
+}
+.menu a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 1;
+	left: 1;
+	width: 60%;
+	height: 70%;
+	border-bottom: 2px solid orangered;
+	transition: 0.4s linear;
+}
+.menu a:hover:before{
+	width: 0%;
+}
+.about a{
+	text-decoration: none;
+	padding: 20px 20px;
+	color: white;
+	font-size: 20px;
+	position: relative;
+}
+.about a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 1;
+	left: 1;
+	width: 60%;
+	height: 70%;
+	border-bottom: 2px solid orangered;
+	transition: 0.4s linear;
+}
+.about a:hover:before{
+	width: 0%;
+}
+.cat a{
+	text-decoration: none;
+	padding: 20px 20px;
+	color: white;
+	font-size: 20px;
+	position: relative;
+}
+.cat a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 4;
+	width: 70%;
+	height: 70%;
+	border-bottom: 2px solid orangered;
+	transition: 0.4s linear;
+}
+.cat a:hover:before{
+	width: 0%;
+}
+.author a{
+	text-decoration: none;
+	padding: 20px 20px;
+	color: white;
+	font-size: 20px;
+	position: relative;
+}
+.author a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 4;
+	width: 60%;
+	height: 70%;
+	border-bottom: 2px solid orangered;
+	transition: 0.4s linear;
+}
+.author a:hover:before{
+	width: 0%;
+}
+
+button{
+	text-decoration: none;
+	padding: 10px 30px;
+	color: white;
+	font-size: 15px;
+	background: orangered;
+	border-radius: 30px;
+}
+section .main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	top: 10%;
+}
+section .main h2{
+	position: relative;
+	font-size: 70px;
+	left: 25px;
+	color: white;
+}
+section .main p{
+	position: relative;
+	font-size: 30px;
+	left: 25px;
+	top: 10px;
+	color: white;
+}
+.About{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.About .Ab_img img{
+	width: 500px;
+	height: 300px;
+}
+.About .Ab_tag h1{
+	width: 200px;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 600px;
+	color: white;
+	background: black;
+	padding: 10px 10px;
+	border-radius: 30px;
+}
+.About .Ab_tag p{
+	width: 600px;
+	text-align: justify;
+	position: relative;
+	left: 30px;
+	font-size: 30px;
+	color: black;
+}
+.About .Ab_tag .href button{
+	text-decoration: none;
+	padding: 10px 30px;
+	color: white;
+	top: 2px;
+	font-size: 10px;
+	color: white;
+	background: black;
+	border-radius: 30px;
+}
+.category{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.category .cate_tag h2{
+	position: relative;
+	width: 300px;
+	font-size: 30px;
+	left: 25px;
+	text-align: center;
+	margin-right: 800px;
+	color: black;
+}
+.category .cate_tag p{
+	position: relative;
+	text-align: justify;
+	width: 700px;
+	left: 25px;
+	font-size: 20px;
+	color: black;
+}
+.category .cate_img img{
+	position: relative;
+	width: 350px;
+	height: 250px;
+	right: 200px;
+}
+.category1{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.category1 .cate_tag1 h3{
+	position: relative;
+	width: 300px;
+	font-size: 30px;
+	left: 300px;
+	text-align: center;
+	margin-right: 800px;
+	color: black;
+}
+.category1 .cate_tag1 p{
+	position: relative;
+	text-align: justify;
+	width: 700px;
+	font-size: 20px;
+	color: black;
+	left: 300px;
+}
+.category1 .cate_img1 img{
+	position: relative;
+	width: 350px;
+	height: 250px;
+	left: 200px;
+}
+.authors{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.authors .a_tag h4{
+	width: 200px;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 600px;
+	color: white;
+	background: black;
+	padding: 10px 10px;
+	border-radius: 30px;
+}
+.authors .a_tag p{
+	width: 600px;
+	text-align: justify;
+	position: relative;
+	left: 30px;
+	font-size: 30px;
+	color: black;
+}
+.ott{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.ott .o_img img{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin: 0px 40px 40px 40px;
+}
